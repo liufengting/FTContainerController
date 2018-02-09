@@ -2,7 +2,7 @@
 //  FTContainerController.h
 //  FTContainerController
 //
-//  Created by LiuFengting on 2017/7/12.
+//  Created by liufengting on 2018/2/9.
 //  Copyright © 2017年 liufengting ( https://github.com/liufengting ). All rights reserved.
 //
 
@@ -12,6 +12,8 @@
 #import "FTContainerScrollView.h"
 
 @protocol FTContainerControllerDelegate <NSObject>
+
+@optional
 
 - (void)ftContainerControllerDidScrollToPage:(NSInteger)page;
 

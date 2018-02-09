@@ -2,7 +2,7 @@
 //  FTContainerController.m
 //  FTContainerController
 //
-//  Created by LiuFengting on 2017/7/12.
+//  Created by liufengting on 2018/2/9.
 //  Copyright © 2017年 liufengting ( https://github.com/liufengting ). All rights reserved.
 //
 
@@ -10,8 +10,8 @@
 
 @interface FTContainerController () <FTContainerSegementDelegate, UIScrollViewDelegate>
 
-@property (nonatomic, strong) UIViewController *superViewController;
-@property (nonatomic, strong) NSArray<UIViewController *> *viewControllers;
+@property (nonatomic, weak) UIViewController *superViewController;
+@property (nonatomic, weak) NSArray<UIViewController *> *viewControllers;
 @property (nonatomic, strong) FTContainerConfig *config;
 
 @end
@@ -80,11 +80,11 @@
     UIViewController *viewController = self.viewControllers[index];
     CGRect vcRect = CGRectMake(self.view.frame.size.width*index, 0, self.view.frame.size.width, self.config.scrollViewFrame.size.height);
     if (!viewController.view.window) {
-        [viewController willMoveToParentViewController:self];
+        [viewController willMoveToParentViewController:self.superViewController];
         [viewController.view setFrame:vcRect];
-        [self addChildViewController:viewController];
+        [self.superViewController addChildViewController:viewController];
         [self.scrollView addSubview:viewController.view];
-        [viewController didMoveToParentViewController:self];
+        [viewController didMoveToParentViewController:self.superViewController];
     }
     [self.scrollView scrollRectToVisible:vcRect animated:YES];
     [self.segementView selectIndex:index];

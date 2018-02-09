@@ -2,7 +2,7 @@
 //  FTContainerSegement.m
 //  FTContainerController
 //
-//  Created by liufengting on 16/7/21.
+//  Created by liufengting on 2018/2/9.
 //  Copyright © 2017年 liufengting ( https://github.com/liufengting ). All rights reserved.
 //
 
@@ -16,7 +16,7 @@ static NSString *const FTContainerSegementCellIdentifier = @"FTContainerSegement
 @property (nonatomic, strong) UIView *indicatorView;
 @property (nonatomic, strong) NSArray<UIViewController *> *viewControllers;
 @property (nonatomic, strong) NSArray<FTContainerTitleModel *> *dataArray;
-@property (nonatomic, strong) id<FTContainerSegementDelegate> delegate;
+@property (nonatomic, weak) id<FTContainerSegementDelegate> delegate;
 @property (nonatomic, strong) FTContainerConfig *config;
 @property (nonatomic, assign) NSInteger selectedIndex;
 
@@ -31,7 +31,7 @@ static NSString *const FTContainerSegementCellIdentifier = @"FTContainerSegement
 {
     self = [super initWithFrame:frame];
     if (self) {
-        self.backgroundColor = [UIColor whiteColor];
+        self.backgroundColor = [UIColor clearColor];
         self.viewControllers = viewControllers;
         self.delegate = delegate;
         self.config = config;

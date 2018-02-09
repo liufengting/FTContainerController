@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A3B9041202DEA9D0038AA86 /* SubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A3B9040202DEA9D0038AA86 /* SubViewController.m */; };
+		2A3B9048202DEECC0038AA86 /* FTContainerSegementCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A3B9046202DEECC0038AA86 /* FTContainerSegementCell.m */; };
+		2A3B9049202DEECC0038AA86 /* FTContainerSegementCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A3B9047202DEECC0038AA86 /* FTContainerSegementCell.xib */; };
 		2A7083901F15EEFB006CE0B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A70838F1F15EEFB006CE0B0 /* main.m */; };
 		2A7083931F15EEFB006CE0B0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7083921F15EEFB006CE0B0 /* AppDelegate.m */; };
 		2A7083961F15EEFB006CE0B0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7083951F15EEFB006CE0B0 /* ViewController.m */; };
@@ -16,11 +19,15 @@
 		2A7083AF1F15EF1D006CE0B0 /* FTContainerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7083A71F15EF1D006CE0B0 /* FTContainerConfig.m */; };
 		2A7083B01F15EF1D006CE0B0 /* FTContainerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7083A91F15EF1D006CE0B0 /* FTContainerController.m */; };
 		2A7083B11F15EF1D006CE0B0 /* FTContainerSegement.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7083AB1F15EF1D006CE0B0 /* FTContainerSegement.m */; };
-		2A7083B21F15EF1D006CE0B0 /* FTContainerSegementCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7083AD1F15EF1D006CE0B0 /* FTContainerSegementCell.m */; };
 		2A7083B61F15EF62006CE0B0 /* FTContainerScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7083B51F15EF62006CE0B0 /* FTContainerScrollView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A3B903F202DEA9D0038AA86 /* SubViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubViewController.h; sourceTree = "<group>"; };
+		2A3B9040202DEA9D0038AA86 /* SubViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubViewController.m; sourceTree = "<group>"; };
+		2A3B9045202DEECC0038AA86 /* FTContainerSegementCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTContainerSegementCell.h; sourceTree = "<group>"; };
+		2A3B9046202DEECC0038AA86 /* FTContainerSegementCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FTContainerSegementCell.m; sourceTree = "<group>"; };
+		2A3B9047202DEECC0038AA86 /* FTContainerSegementCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FTContainerSegementCell.xib; sourceTree = "<group>"; };
 		2A70838B1F15EEFB006CE0B0 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A70838F1F15EEFB006CE0B0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2A7083911F15EEFB006CE0B0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -37,8 +44,6 @@
 		2A7083A91F15EF1D006CE0B0 /* FTContainerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTContainerController.m; sourceTree = "<group>"; };
 		2A7083AA1F15EF1D006CE0B0 /* FTContainerSegement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTContainerSegement.h; sourceTree = "<group>"; };
 		2A7083AB1F15EF1D006CE0B0 /* FTContainerSegement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTContainerSegement.m; sourceTree = "<group>"; };
-		2A7083AC1F15EF1D006CE0B0 /* FTContainerSegementCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTContainerSegementCell.h; sourceTree = "<group>"; };
-		2A7083AD1F15EF1D006CE0B0 /* FTContainerSegementCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTContainerSegementCell.m; sourceTree = "<group>"; };
 		2A7083B41F15EF62006CE0B0 /* FTContainerScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTContainerScrollView.h; sourceTree = "<group>"; };
 		2A7083B51F15EF62006CE0B0 /* FTContainerScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTContainerScrollView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,6 +83,8 @@
 				2A7083921F15EEFB006CE0B0 /* AppDelegate.m */,
 				2A7083941F15EEFB006CE0B0 /* ViewController.h */,
 				2A7083951F15EEFB006CE0B0 /* ViewController.m */,
+				2A3B903F202DEA9D0038AA86 /* SubViewController.h */,
+				2A3B9040202DEA9D0038AA86 /* SubViewController.m */,
 				2A7083971F15EEFB006CE0B0 /* Main.storyboard */,
 				2A70839A1F15EEFB006CE0B0 /* Assets.xcassets */,
 				2A70839C1F15EEFB006CE0B0 /* LaunchScreen.storyboard */,
@@ -106,8 +113,9 @@
 				2A7083B51F15EF62006CE0B0 /* FTContainerScrollView.m */,
 				2A7083AA1F15EF1D006CE0B0 /* FTContainerSegement.h */,
 				2A7083AB1F15EF1D006CE0B0 /* FTContainerSegement.m */,
-				2A7083AC1F15EF1D006CE0B0 /* FTContainerSegementCell.h */,
-				2A7083AD1F15EF1D006CE0B0 /* FTContainerSegementCell.m */,
+				2A3B9045202DEECC0038AA86 /* FTContainerSegementCell.h */,
+				2A3B9046202DEECC0038AA86 /* FTContainerSegementCell.m */,
+				2A3B9047202DEECC0038AA86 /* FTContainerSegementCell.xib */,
 			);
 			path = FTContainerController;
 			sourceTree = SOURCE_ROOT;
@@ -143,7 +151,8 @@
 				TargetAttributes = {
 					2A70838A1F15EEFB006CE0B0 = {
 						CreatedOnToolsVersion = 8.3.2;
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = E83AC9WR2F;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -171,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A70839E1F15EEFB006CE0B0 /* LaunchScreen.storyboard in Resources */,
+				2A3B9049202DEECC0038AA86 /* FTContainerSegementCell.xib in Resources */,
 				2A70839B1F15EEFB006CE0B0 /* Assets.xcassets in Resources */,
 				2A7083991F15EEFB006CE0B0 /* Main.storyboard in Resources */,
 			);
@@ -185,10 +195,11 @@
 			files = (
 				2A7083B01F15EF1D006CE0B0 /* FTContainerController.m in Sources */,
 				2A7083B61F15EF62006CE0B0 /* FTContainerScrollView.m in Sources */,
+				2A3B9048202DEECC0038AA86 /* FTContainerSegementCell.m in Sources */,
 				2A7083961F15EEFB006CE0B0 /* ViewController.m in Sources */,
+				2A3B9041202DEA9D0038AA86 /* SubViewController.m in Sources */,
 				2A7083AF1F15EF1D006CE0B0 /* FTContainerConfig.m in Sources */,
 				2A7083B11F15EF1D006CE0B0 /* FTContainerSegement.m in Sources */,
-				2A7083B21F15EF1D006CE0B0 /* FTContainerSegementCell.m in Sources */,
 				2A7083931F15EEFB006CE0B0 /* AppDelegate.m in Sources */,
 				2A7083901F15EEFB006CE0B0 /* main.m in Sources */,
 			);
@@ -310,7 +321,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E83AC9WR2F;
 				INFOPLIST_FILE = Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LiuFengting.Demo;
@@ -323,7 +336,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E83AC9WR2F;
 				INFOPLIST_FILE = Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LiuFengting.Demo;
@@ -351,6 +366,7 @@
 				2A7083A41F15EEFB006CE0B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
