@@ -25,6 +25,7 @@
 @property (nonatomic, assign)BOOL contentEnableScrolling;
 
 + (FTContainerConfig *)defaultConfig;
++ (FTContainerConfig *)navConfig;
 
 - (instancetype)initWithSegementViewFrame:(CGRect)segementViewframe
                           scrollViewFrame:(CGRect)scrollViewFrame

@@ -17,8 +17,23 @@
 
 + (FTContainerConfig *)defaultConfig
 {
-    FTContainerConfig * config = [[FTContainerConfig alloc] initWithSegementViewFrame:CGRectMake(0, 0, SCREEN_WIDTH, HEAD_SEGEMENT_HEIGHT)
-                                                                      scrollViewFrame:CGRectMake(0, HEAD_SEGEMENT_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT - HEAD_SEGEMENT_HEIGHT - NAVIGATION_HEIGHT)
+    FTContainerConfig * config = [[FTContainerConfig alloc] initWithSegementViewFrame:CGRectMake(0, NAVIGATION_HEIGHT, SCREEN_WIDTH, HEAD_SEGEMENT_HEIGHT)
+                                                                      scrollViewFrame:CGRectMake(0, NAVIGATION_HEIGHT + HEAD_SEGEMENT_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT - HEAD_SEGEMENT_HEIGHT - NAVIGATION_HEIGHT)
+                                                                               margin:25
+                                                                      defaultFontSize:13
+                                                                     selectedFontSize:13
+                                                                         defaultColor:[UIColor lightGrayColor]
+                                                                        selectedColor:[UIColor blackColor]
+                                                                         fillSegement:YES];
+    config.segementIndicatorColor = [UIColor redColor];
+    config.segementEnableScrolling = YES;
+    config.contentEnableScrolling = YES;
+    return config;
+}
+
++ (FTContainerConfig *)navConfig {
+    FTContainerConfig * config = [[FTContainerConfig alloc] initWithSegementViewFrame:CGRectMake(0, NAVIGATION_HEIGHT, 240.f, HEAD_SEGEMENT_HEIGHT)
+                                                                      scrollViewFrame:CGRectMake(0, NAVIGATION_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT - NAVIGATION_HEIGHT)
                                                                                margin:25
                                                                       defaultFontSize:13
                                                                      selectedFontSize:13

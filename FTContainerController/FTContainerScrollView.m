@@ -21,6 +21,7 @@
         self.showsVerticalScrollIndicator = NO;
         self.alwaysBounceHorizontal = config.contentEnableScrolling;
         self.alwaysBounceVertical = NO;
+        self.alwaysBounceVertical = NO;
         self.pagingEnabled = YES;
         self.scrollsToTop = NO;
         self.delegate = delegate;

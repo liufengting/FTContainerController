@@ -39,8 +39,8 @@
 {
     self = [super init];
     if (self) {
-        self.view.frame = config.scrollViewFrame;
         self.automaticallyAdjustsScrollViewInsets = NO;
+        self.view.frame = config.scrollViewFrame;
 
         self.superViewController = superViewController;
         self.viewControllers = viewControllers;
@@ -80,11 +80,11 @@
     UIViewController *viewController = self.viewControllers[index];
     CGRect vcRect = CGRectMake(self.view.frame.size.width*index, 0, self.view.frame.size.width, self.config.scrollViewFrame.size.height);
     if (!viewController.view.window) {
-        [viewController willMoveToParentViewController:self.superViewController];
+        [viewController willMoveToParentViewController:self];
         [viewController.view setFrame:vcRect];
-        [self.superViewController addChildViewController:viewController];
+        [self addChildViewController:viewController];
         [self.scrollView addSubview:viewController.view];
-        [viewController didMoveToParentViewController:self.superViewController];
+        [viewController didMoveToParentViewController:self];
     }
     [self.scrollView scrollRectToVisible:vcRect animated:YES];
     [self.segementView selectIndex:index];
